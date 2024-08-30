@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <h1 class="text-4xl">سلام ساحل</h1>
+  <router-view/>
 </template>
 <style scoped>
 </style>
