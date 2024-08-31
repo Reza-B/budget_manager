@@ -1,20 +1,17 @@
 
 <script setup>
 
-import { ref } from "vue";
 
-    const icon = ref("test")
-    const title = ref("test")
-    const value = ref("test")
+import HomeCard from "@/components/HomeCard.vue";
+import bankcardicon from "@/assets/icons/bankcardicon.svg" ;
 
 </script>
 
 <template>
-    <div>
-      <p>{{ title }}</p>
-      <span>{{ icon }}</span>
-      <p>{{ value }}</p>
-    </div>
+    <div class="flex-row justify-between">
+  <HomeCard :icon = "bankcardicon" title = "title1" value = "25000$"/>
+ 
+</div>
   </template>
   
   <style scoped>
