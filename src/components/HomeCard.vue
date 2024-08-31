@@ -2,11 +2,11 @@
 <script setup>
 
 
-import { defineProps } from "vue";
+import { defineProps ,computed  } from "vue";
 
 
 
-defineProps({
+const props = defineProps({
      icon :{
         default : '@/assets/icons/bankcardicon.svg'
      },
@@ -20,12 +20,26 @@ defineProps({
      }
 })
 
+const conditionalClass = computed(() => {
+  switch (props.title) {
+    case 'cash':
+      return 'bg-[#E1ECFE]';
+    case 'cart':
+      return "bg-[#FEE0D6]";
+    case 'saving':
+      return "bg-[#fff2bd]";
+    default:
+      return "bg-[#bdffc8]";
+  }
+});
+
+
 </script>
 
 <template>
-    <div class="w-[150px] h-[150px] flex-col bg-slate-600 rounded-[25%] grid grid-rows-2 grid-flow-col">
+    <div :class="['w-[170px]', 'h-[170px]', 'flex-col', 'rounded-[25%]', 'grid', 'grid-rows-2', 'grid-flow-col','m-2', conditionalClass]">
         <div class="justify-between grid grid-cols-2 ">
-            <span class="w-[60px] h-[60px] m-3 bg-white rounded-full flex items-center justify-center"> <img :src="icon"></span>
+            <span class="w-[70px] h-[70px] m-3 bg-white rounded-full flex items-center justify-center"> <img :src="icon"></span>
 
             <p class=" flex items-center justify-center text-2xl">{{ title }}</p>
         </div>
