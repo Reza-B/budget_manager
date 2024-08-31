@@ -7,6 +7,7 @@ import HomeAdd from "@/components/HomeAdd.vue";
 import bankcardicon from "@/assets/icons/bankcardicon.svg" ;
 import HomeBalance from "@/components/HomeBalance.vue";
 
+
 </script>
 
 <template>

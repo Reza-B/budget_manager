@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import SplashView from "@/views/SplashView.vue";
 import HomeView from "@/views/HomeView.vue";
+import AnalysisView from "@/views/AnalysisView.vue";
 
 
 const router = createRouter({
@@ -15,6 +16,11 @@ const router = createRouter({
 			path : "/home",
 			name : "home",
 			component : HomeView,
+		},
+		{
+			path : "/analysis",
+			name : "analysis",
+			component : AnalysisView,
 		}
 	],
 });
