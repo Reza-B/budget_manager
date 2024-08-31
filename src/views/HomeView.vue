@@ -10,7 +10,7 @@ import HomeBalance from "@/components/HomeBalance.vue";
 </script>
 
 <template>
-    <HomeBalance />
+    <HomeBalance balance="32,645.40"/>
     <div class="flex flex-wrap justify-center ">
     
   <HomeCard :icon = "bankcardicon" title = "cart" value = "25000$"/>
