@@ -14,9 +14,9 @@ import HomeBalance from "@/components/HomeBalance.vue";
     <HomeBalance balance="32,645.40"/>
     <div class="flex flex-wrap justify-center ">
     
-  <HomeCard :icon = "bankcardicon" title = "cart" value = "25000$"/>
-  <HomeCard :icon = "bankcardicon" title = "cash" value = "25000$"/>
-  <HomeCard :icon = "bankcardicon" title = "saving" value = "25000$"/>
+  <HomeCard :icon = "bankcardicon" title = "cart" value = "25000"/>
+  <HomeCard :icon = "bankcardicon" title = "cash" value = "25000"/>
+  <HomeCard :icon = "bankcardicon" title = "saving" value = "25000"/>
   <HomeAdd />
  
 </div>

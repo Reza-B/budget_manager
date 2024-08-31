@@ -43,7 +43,8 @@ const conditionalClass = computed(() => {
 
             <p class=" flex items-center justify-center text-2xl">{{ title }}</p>
         </div>
-        <p class="flex items-center justify-center text-3xl">{{ value }}</p>
+        <div class="flex items-center justify-center ">
+        <p class="text-3xl"><span class="text-xl font-bold text-slate-600">$</span>{{ value }}</p></div>
     </div>
   </template>
   
