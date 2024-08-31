@@ -13,7 +13,7 @@ export default defineConfig({
 		vue(),
 		VitePWA({
 			registerType: "autoUpdate",
-			includeAssets: ["favicon.png", "favicon.ico"],
+			includeAssets: ["favicon.ico", "apple-touch-icon.png"],
 			manifest: {
 				name: "Budget Manager",
 				short_name: "Budget",
@@ -21,22 +21,17 @@ export default defineConfig({
 				theme_color: "#ffffff",
 				icons: [
 					{
-						src: "128.png",
-						sizes: "128x128",
-						type: "image/png",
-					},
-					{
-						src: "192.png",
+						src: "android-chrome-192x192.png",
 						sizes: "192x192",
 						type: "image/png",
 					},
 					{
-						src: "512.png",
+						src: "android-chrome-512x512.png",
 						sizes: "512x512",
 						type: "image/png",
 					},
 					{
-						src: "512.png",
+						src: "android-chrome-512x512.png",
 						sizes: "512x512",
 						type: "image/png",
 						purpose: "any maskable",
