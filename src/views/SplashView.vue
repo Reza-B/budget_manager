@@ -16,7 +16,7 @@
 		</div>
 		<RouterLink
 			class="py-4 px-8 w-fit rounded-[50px] font-bold text-xl bg-black text-white"
-			to="/home">
+			to="/app">
 			Get Started
 		</RouterLink>
 	</div>
