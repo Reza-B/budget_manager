@@ -12,7 +12,7 @@ const btnClick = (id) => {
 };
 </script>
 <template>
-	<div class="bottom-0 absolute z-10 flex justify-around w-full p-8">
+	<div class="bottom-0 absolute z-50 flex justify-around w-full p-8 bg-white">
 		<button @click="btnClick(0)">
 			<svg
 				v-if="pageIndex !== 0"
