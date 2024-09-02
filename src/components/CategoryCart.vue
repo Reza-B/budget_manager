@@ -3,34 +3,35 @@ import { defineProps, computed } from "vue";
 
 const props = defineProps({
 	icon: {
-		default: "@/assets/icons/bankcardicon.svg",
+		type: String,
+		default: "/icons/bankcardicon.svg",
 	},
 	title: {
 		type: String,
 		default: "title",
 	},
 	value: {
-		type: String,
-		default: "0",
+		type: Number,
+		default: 0,
 	},
 });
 
 const conditionalClass = computed(() => {
 	switch (props.title) {
-        case 'Shoping':
-      return 'bg-[#E0FFE0]';
-    case 'Gifts':
-      return "bg-[#EBE2FF]";
-    case 'Food':
-      return "bg-[#FEE0D6]";
-    case 'Cafe':
-      return "bg-[#E0ECFF]";
-    case 'Transport':
-      return "bg-[#FFF7DA]";
-    case 'Health':
-      return "bg-[#D5FFF8]";
-    default:
-      return "bg-[#F5F5F5]";
+		case "Shoping":
+			return "bg-[#E0FFE0]";
+		case "Gifts":
+			return "bg-[#EBE2FF]";
+		case "Food":
+			return "bg-[#FEE0D6]";
+		case "Cafe":
+			return "bg-[#E0ECFF]";
+		case "Transport":
+			return "bg-[#FFF7DA]";
+		case "Health":
+			return "bg-[#D5FFF8]";
+		default:
+			return "bg-[#F5F5F5]";
 	}
 });
 </script>
@@ -40,8 +41,8 @@ const conditionalClass = computed(() => {
 		:class="[
 			'w-[30%]',
 			'm-1',
-            'flex',
-            'gap-2',
+			'flex',
+			'gap-2',
 			'flex-col',
 			'rounded-[25%]',
 			conditionalClass,
@@ -57,7 +58,7 @@ const conditionalClass = computed(() => {
 
 			<div class="text-2xl">
 				<span class="text-sm font-bold text-slate-600">$</span>{{ value }}
-            </div>
+			</div>
 		</div>
 	</div>
 </template>
