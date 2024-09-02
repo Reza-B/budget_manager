@@ -11,7 +11,7 @@ const props = defineProps({
 	},
 	value: {
 		type: String,
-		default: "1000$",
+		default: "0",
 	},
 });
 

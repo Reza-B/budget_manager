@@ -24,6 +24,7 @@ import HomeBalance from "@/components/HomeBalance.vue";
 			value="25000" />
 		<HomeAdd />
 	</div>
+	
 </template>
 
 <style scoped></style>
